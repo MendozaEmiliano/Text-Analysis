@@ -1,8 +1,7 @@
 rm(list = ls())
 
-
-library(rwhatsapp)
-library(lubridate)
+library(rwhatsapp) # paquete para analisis de texto de whatsapp
+library(lubridate) 
 library(tidyverse)
 library(tidytext)
 library(kableExtra)
