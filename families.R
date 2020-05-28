@@ -1,6 +1,6 @@
 rm(list = ls())
 
-library(usethis)
+library(usethis) # paquete para vincular con github
 library(rwhatsapp) # paquete para analisis de texto de whatsapp
 library(lubridate) 
 library(tidyverse)
@@ -53,7 +53,6 @@ miChat %>%
   theme( legend.title = element_blank(), 
          legend.position = "bottom")
 
-max(miChat)
 
 miChat %>% 
   count(day) %>%
