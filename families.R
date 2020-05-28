@@ -1,5 +1,6 @@
 rm(list = ls())
 
+library(usethis)
 library(rwhatsapp) # paquete para analisis de texto de whatsapp
 library(lubridate) 
 library(tidyverse)
@@ -11,6 +12,12 @@ library(ggimage)
 library(dplyr)
 library(stopwords)
 
+use_github
+edit_r_environ()
+use_github(protocol = 'https', auth_token = Sys.getenv("GITHUB_PAT"))
+
+
+# Data base
 miChat <- rwa_read("grupo.txt")
 
 
